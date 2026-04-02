@@ -1,7 +1,6 @@
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         l,r = 1 , max(piles)
-        result = r
         while l <= r:
             k = (l + r) // 2 # // gives floor as ans like 2.63 if res of divison it will ans 2
             totalTime = 0
